@@ -332,7 +332,11 @@ header > div ul {
 @media(max-width: 990px) {
     html {
         font-size: 185%;
-    } 
+    }
+
+    header{
+    height: 81px;
+    }
     .nav-link {
         letter-spacing: normal;
     }
