@@ -226,7 +226,7 @@ header > div ul {
 }
 
 .titles-nav-up {
-    top: 0px;
+    top: -2.5rem;
 }
 
 .titles {
@@ -334,6 +334,9 @@ header > div ul {
    .blurb p {
         max-width:100%;
     }
+   .rules {
+        padding: 18px 24px;
+} 
    .rules-body {
         max-width: 100%;
     } 
