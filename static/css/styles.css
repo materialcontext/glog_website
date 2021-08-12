@@ -333,8 +333,14 @@ header > div ul {
         font-size: 200%;
     }
 
+    blurb p {
+        max-width:100%;
+    }
+    rules-body {
+        max-width: 100%;
+    } 
     header{
-    height: 4.125rem;
+        height: 4.125rem;
     }
     .nav-link {
         letter-spacing: normal;
