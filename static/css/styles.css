@@ -48,7 +48,7 @@ header {
   border: none;
   font-family: var(--header-font);
   font-weight: 800;
-  height: 10vh;
+  height: 12vh;
   padding: 12px 16px;
   transition: top 0.2s ease-in-out;
   width: 100%;
@@ -59,7 +59,7 @@ header {
 
 .nav-up {
     box-shadow: 0px 1px 4px #666;
-    top: -50px;
+    top: -12vh;
 }
 
 .nav-link {
@@ -222,14 +222,14 @@ header > div ul {
 
 .titles-collapse {
     position: sticky;
-    top: 50px;
+    top: 12vh;
     background-color: #fafafa;
     transition: top 0.2s ease-in-out;
     width: 100%;
 }
 
 .titles-nav-up {
-    top: 0px
+    top: 0px;
 }
 
 .titles {
@@ -264,7 +264,7 @@ header > div ul {
     }
 
  .title-header > h3 {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 12vh;
  }
 
  /* ========= Footer ========= */
@@ -330,13 +330,15 @@ header > div ul {
 
 /* media queries */
 @media(max-width: 990px) {
-    :root {font-size: 24px;} 
+    :root {
+        font-size: 24px;
+    } 
     .nav-link {
         letter-spacing: normal;
     }
 
     .content {
-        padding-top: 50px;
+        padding-top: 10vh;
     }
 
     .top-nav > .nav-link:after {
