@@ -112,7 +112,7 @@ header > div ul {
 .top-nav {
     font-size: 1.35rem;
     padding: 12px 16px;
-    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .top-nav > ul {
