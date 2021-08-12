@@ -8,16 +8,16 @@
   --selection-color: #a6f;
   --header-font: "Archivo", sans-serif;
   --mono-font: "Nova Mono", monospace;
-
-    line-height: 1.5;
 }
 
 html {
     background-color: #fafafa;
     font-size: 120%;
+    line-height: 1.5;
 }
 
 p {
+    font-size: 1.125rem;
     font-weight: 300;
 }
 
@@ -205,7 +205,7 @@ header > div ul {
 }
 
 .rules-body {
-    max-width: 700px;
+    max-width: 720px;
     text-align: justify;
 }
 
@@ -308,11 +308,11 @@ header > div ul {
 }
 
 #nav-icon1 span:nth-child(1) {
-  top: 3%;
+  top: 33.33%;
 }
 
 #nav-icon1 span:nth-child(2) {
-  top: 6%;
+  top: 66.66%;
 }
 
 /* Hamburger Animation*/
@@ -330,7 +330,7 @@ header > div ul {
 /* media queries */
 @media(max-width: 990px) {
     html {
-        font-size: 185%;
+        font-size: 200%;
     }
 
     header{
