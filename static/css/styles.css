@@ -9,12 +9,12 @@
   --header-font: "Archivo", sans-serif;
   --mono-font: "Nova Mono", monospace;
 
-    font-size: 18px;
     line-height: 1.5;
 }
 
-body {
+html {
     background-color: #fafafa;
+    font-size: 120%;
 }
 
 p {
@@ -48,7 +48,7 @@ header {
   border: none;
   font-family: var(--header-font);
   font-weight: 800;
-  height: 50px;
+  height: 54px;
   padding: 12px 16px;
   transition: top 0.2s ease-in-out;
   width: 100%;
@@ -222,7 +222,7 @@ header > div ul {
 
 .titles-collapse {
     position: sticky;
-    top: 50px;
+    top: 54px;
     background-color: #fafafa;
     transition: top 0.2s ease-in-out;
     width: 100%;
@@ -264,7 +264,7 @@ header > div ul {
     }
 
  .title-header > h3 {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 54px;
  }
 
  /* ========= Footer ========= */
@@ -330,15 +330,15 @@ header > div ul {
 
 /* media queries */
 @media(max-width: 990px) {
-    :root {
-        font-size: 24px;
+    html {
+        font-size: 185%;
     } 
     .nav-link {
         letter-spacing: normal;
     }
 
     .content {
-        padding-top: 50px;
+        padding-top: 54px;
     }
 
     .top-nav > .nav-link:after {
