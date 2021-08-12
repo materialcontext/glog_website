@@ -333,10 +333,10 @@ header > div ul {
         font-size: 200%;
     }
 
-    blurb p {
+   .blurb p {
         max-width:100%;
     }
-    rules-body {
+   .rules-body {
         max-width: 100%;
     } 
     header{
