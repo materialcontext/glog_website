@@ -331,7 +331,7 @@ header > div ul {
 /* media queries */
 @media(max-width: 990px) {
     :root {
-        font-size: 48px;
+        font-size: 24px;
     } 
     .nav-link {
         letter-spacing: normal;
