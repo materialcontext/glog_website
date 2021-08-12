@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rules</title>
+</head>
+<body>
+<!-- Create a nested set of buttons for navigation within the rules -->
+<section class="rules-content col-lg-8" id="rules-content">
+    <!-- create an item containing the heading with a collapsed accordion div -->
+    {% for heading in headings %}
+    {% if headings[heading]|length == 1 %}
+    <div class="card">
+        <button class='btn rules-btn collpased' role="button" data-bs-toggle="collapse"
+                data-bs-target="#{{ heading.split()[-1] }}"><h2>{{ heading }}</h2>
+        </button>
+
+        <div class="collapse" id="{{ heading.split()[-1] }}"
+             aria-expanded="false">
+            <hr>
+            <div class="rules">
+                {% for title in headings[heading] %}
+                {% for subheading in headings[heading][title] %}
+                <div class="rules-body">
+                <h5>{{subheading}}</h5>
+                {% for rule in headings[heading][title][subheading] %}
+                <p>{{ rule|safe }}</p>
+                {% endfor %}
+                </div>
+                {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="card" id="{{ heading.split()[-1] }}-menu">
+        <button class='btn rules-btn collpased' role="button" data-bs-toggle="collapse"
+                data-bs-target=".{{ heading.split()[-1] }}"><h2>{{ heading }}</h2>
+        </button>
+        <div class="titles-collapse collapse {{ heading.split()[-1] }} nav-down"
+             aria-expanded="false">
+            <hr>
+            <ul class="titles">
+                {% for title in headings[heading] %}
+                {% if title != "" %}
+                <li class="titles-item">
+                    <a class="title-link hover-underline"
+                       href="#{{ title.split()[-1] }}">{{ title }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <hr>
+        </div>
+        <div data-bs-spy="scroll"
+             data-bs-target="{{ heading.split()[-1] }}-menu}"
+             data-bs-offset="-100"
+             class="collapse {{ heading.split()[-1] }} rules"
+             aria-expanded="false">
+            {% for title in headings[heading] %}
+            <div class="title-header"><h3 id="{{ title.split()[-1] }}">{{ title }}</h3></div>
+            {% for subheading in headings[heading][title] %}
+            <div class="rules-body">
+            <h5>{{subheading}}</h5>
+            {% for rule in headings[heading][title][subheading] %}
+            <p>{{ rule|safe }}</p>
+            {% endfor %}
+            </div>
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</section>
+</body>
+</html>
