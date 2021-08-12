@@ -111,6 +111,7 @@ header > div ul {
 /* Menus */
 .top-nav {
     font-size: 1.35rem;
+    padding: 3% 6%;
     flex-grow: 1;
 }
 
@@ -318,12 +319,12 @@ header > div ul {
 
 /* Hamburger Animation*/
 #nav-icon1.open span:nth-child(1) {
-  top: 3%;
+  top: 33.3%;
   transform: rotate(135deg);
 }
 
 #nav-icon1.open span:nth-child(2) {
-  top: 3%;
+  top: 33.3%;
   transform: rotate(-135deg);
 }
 
