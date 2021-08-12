@@ -148,6 +148,8 @@ header > div ul {
 }
 
 .top-left {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     padding-left: 6%;
@@ -155,9 +157,7 @@ header > div ul {
 
 /* Search Bar */
 .top-right {
-    align-items: center;
-    justify-content: flex-end;
-    padding-left: 6%;
+    background-color: transparent;
 }
 
 .search-bar {
